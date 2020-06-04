@@ -104,9 +104,7 @@ impl<'a> App<'a> {
     }
 
     pub fn key_press(&mut self, args: &Button) {
-		use piston_window::Button::Keyboard;
-		use piston_window::Key;		
-		
+		use piston_window::Button::Keyboard;	
         if *args == Keyboard(Key::Left) {
             self.board.merge_from_right_to_left();
         }
